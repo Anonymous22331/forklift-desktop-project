@@ -1,0 +1,19 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/MainMenuCSS.uss?fileID=7433441132597879392&amp;guid=df22b723f9267b94788e8919600d7288&amp;type=3#MainMenuCSS" />
+    <ui:VisualElement name="root" class="root">
+        <ui:VisualElement name="menuPanel" class="panel">
+            <ui:Label text="Forklift Simulator" class="title" />
+            <ui:Button name="startButton" text="Начать" focusable="false" class="menu-button" />
+            <ui:Button name="exitButton" text="Выйти" focusable="false" class="menu-button" />
+        </ui:VisualElement>
+        <ui:VisualElement name="exitOverlay" class="overlay hiddenNotification">
+            <ui:VisualElement class="dialog">
+                <ui:Label text="Выйти из игры?" class="dialog-title" />
+                <ui:VisualElement class="dialog-buttons">
+                    <ui:Button name="confirmExitButton" text="Да" class="menu-button menu-button-danger" />
+                    <ui:Button name="cancelExitButton" text="Нет" class="menu-button" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

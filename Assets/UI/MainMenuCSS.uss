@@ -1,0 +1,69 @@
+.root {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(100, 100, 100, 0.3);
+    justify-content: center;
+    align-items: center;
+}
+
+.panel {
+    background-color: rgba(255, 235, 200, 0.95);
+    padding: 28px;
+    align-items: stretch;
+    border-radius: 6px;
+}
+
+.title {
+    font-size: 22px;
+    unity-font-style: bold;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.menu-button {
+    height: 36px;
+    background-color: rgba(220, 170, 120, 0.5);
+    color: rgb(40, 30, 20);
+    border-radius: 4px;
+}
+
+.menu-button:hover {
+    background-color: rgb(240, 200, 160);
+}
+
+.menu-button:active {
+    background-color: rgb(200, 150, 105);
+}
+
+.menu-button-danger {
+    background-color: rgb(210, 120, 100);
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+    justify-content: center;
+    align-items: center;
+}
+
+.hiddenNotification {
+    display: none;
+}
+
+.dialog {
+    background-color: rgb(240, 200, 160);
+    padding: 20px;
+    border-radius: 6px;
+    min-width: 240px;
+}
+
+.dialog-title {
+    text-align: center;
+}
+
+.dialog-buttons {
+    flex-direction: row;
+    justify-content: space-between;
+}
