@@ -1,14 +1,15 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/MainMenuCSS.uss?fileID=7433441132597879392&amp;guid=df22b723f9267b94788e8919600d7288&amp;type=3#MainMenuCSS" />
     <ui:VisualElement name="root" class="root">
-        <ui:VisualElement name="menuPanel" class="panel" style="height: 218px; width: 405px;">
-            <ui:Label text="Forklift Simulator" name="menuPanelLable" class="title" style="align-self: auto; align-items: auto; -unity-text-align: upper-center;" />
-            <ui:Button name="startButton" text="Начать" focusable="false" class="menu-button" />
-            <ui:Button name="exitButton" text="Выйти" focusable="false" class="menu-button" />
+        <ui:VisualElement name="pausePanel" class="panel">
+            <ui:Label text="Пауза" name="pauseLable" class="title" style="-unity-text-align: upper-center;" />
+            <ui:Button name="continueButton" text="Продолжить" class="menu-button" />
+            <ui:Button name="toMenuButton" text="В главное меню" class="menu-button" />
+            <ui:Button name="exitButton" text="Выход" class="menu-button" />
         </ui:VisualElement>
-        <ui:VisualElement name="exitOverlay" class="overlay hiddenNotification">
+        <ui:VisualElement name="confirmOverlay" class="overlay hiddenNotification">
             <ui:VisualElement name="dialogPanel" class="dialog">
-                <ui:Label text="Выйти из игры?" name="dialogLable" class="dialog-title" style="-unity-text-align: upper-center;" />
+                <ui:Label text="Выйти из игры?" name="confirmTitle" class="dialog-title" style="-unity-text-align: upper-center;" />
                 <ui:VisualElement name="dialogButtonsContainer" class="dialog-buttons">
                     <ui:Button name="confirmExitButton" text="Да" class="menu-button menu-button-danger" />
                     <ui:Button name="cancelExitButton" text="Нет" class="menu-button" />

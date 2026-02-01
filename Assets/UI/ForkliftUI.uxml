@@ -1,0 +1,24 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/ForkliftUICSS.uss?fileID=7433441132597879392&amp;guid=fff91484f0f2ff343ba51a3c35e213c3&amp;type=3#ForkliftUICSS" />
+    <ui:VisualElement name="root" class="root">
+        <ui:VisualElement name="engineBlock" class="block" style="flex-grow: 1;">
+            <ui:VisualElement name="engineLight" class="engine-light on">
+                <ui:Label name="engineLable" text="ВКЛ" class="engine-text" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="speedBlock" class="block speed-block">
+            <ui:Label text="СКОРОСТЬ" name="speedLable" class="caption" />
+            <ui:Label name="speedValueLable" text="0" class="speed-text" />
+        </ui:VisualElement>
+        <ui:VisualElement name="fuelBlock" class="block">
+            <ui:VisualElement name="fuelCircleFull" class="fuel-fill Full" style="align-self: auto; justify-content: flex-start; align-content: center; top: auto; left: auto;">
+                <ui:VisualElement name="fuelEmptyMask" class="fuel-empty-mask" style="flex-grow: 1; top: auto; left: auto; height: 0;">
+                    <ui:VisualElement name="fuelEmptyCircle" class="fuel-fill Empty" style="flex-grow: 1;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="fuelHole" class="fuel-hole" style="align-content: flex-start; align-items: stretch; top: auto; left: auto; position: absolute;">
+                <ui:Label name="fuelText" text="70%" class="fuel-text" style="-unity-text-align: middle-center; align-self: auto; align-items: auto; align-content: center; top: auto; position: relative; justify-content: flex-end; height: 100%; width: 100%; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
